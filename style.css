@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(19, 25, 33);
+    color: white;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+header div:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header span {
+    font-size: large;
+    font-weight: bold;
+}
+
+header .two {
+    display: flex;
+    align-items: center;
+}
+
+header .three form {
+    display: flex;
+}
+
+.head {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(35, 47, 62);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+}
+
+.head ul li {
+    display: inline;
+    margin-left: 15px;
+    padding: 5px 7px;
+    cursor: pointer;
+   
+}
+
+.head ul li:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+input[type=text]{
+    
+    outline: none;
+    border-radius: 5px;
+}
+input[type=image]{
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[name=language] {
+    accent-color: orange;
+}
+
+.app {
+    display: flex;
+}
+
+.side {
+    position: absolute;
+    top: 40px;
+    /* overflow: hidden;
+    overflow-y: scroll; */
+    /* overflow: scroll; */
+    z-index: 3;
+    background-color: white;
+    display: none;
+    width: 350px;
+}
+
+.head #all:hover .side {
+    display: block;
+}
+
+.side h2 {
+    background-color: rgb(19, 26, 34);
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.side ul li {
+    font-size: large;
+    padding: 5px 20px;
+    color: black;
+    display: flex;
+
+}
+.side ul li span{
+    margin-left: auto;
+}
+
+.side ul li:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side ul li:not(:first-child):hover {
+    background-color: lightgray;
+}
+
+.prime img {
+    display: none;
+    position: absolute;
+    right: 450px;
+}
+
+.prime:hover img {
+    display: block;
+}
+
+select {
+    width: 41px;
+    border: none;
+    border-radius: 5px;
+}
+select:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.four ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.four ul li {
+    padding: 10px;
+}
+
+.four ul li:first-child {
+    border-bottom: 1px solid gray;
+}
+
+.four:hover #subfour {
+    display: block;
+
+}
+
+.four ul li a {
+    text-decoration: none;
+    color: rgb(52, 202, 252);
+}
+
+.four ul li:hover {
+    color: orange;
+    text-decoration: underline;
+
+}
+
+
+.fivemain {
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 100px;
+    border-radius: 5px;
+
+
+}
+
+.five:hover .fivemain {
+    display: block;
+}
+
+.signin {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.fivemenu {
+    display: flex;
+}
+
+.lists {
+    border-right: 1px solid gray;
+}
+
+.fivemenu ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.fivemenu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fivemenu ul li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.signin a {
+    color: green;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.signin button {
+   
+    background: linear-gradient(to top, rgb(241, 173, 0), rgb(255, 227, 155));
+    font-weight: bold;
+    width: 270px;
+    height: 30px;
+    border-color: rgb(255, 207, 86);
+    border-radius: 5px;
+}
+
+
+
+.slider {
+    padding-top: 95px;
+    width: 95%;
+    margin: auto;
+}
+
+.products {
+    position: relative;
+    top: -700px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+ 
+}
+
+.product {
+    
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.product img {
+    width: 300px;
+}
+
+.product a {
+    text-decoration: none;
+    color: rgb(0, 226, 151);
+}
+
+.product a:hover {
+    text-decoration: underline;
+}
+
+.emi {
+    text-align: center;
+    margin-top: -700px;
+}
+
+.products1 {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+  
+}
+
+.product1 {
+
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product1 img {
+    width: 300px;
+}
+
+.product1 a {
+    text-decoration: none;
+    color: rgb(0, 226, 151);
+}
+
+.product1 a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footup {
+    text-align: center;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.footup a {
+    color: green;
+    text-decoration: none;
+}
+
+.footup a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.footup button {
+  
+    background: linear-gradient(to top, rgb(241, 173, 0), rgb(255, 227, 155));
+    font-weight: bold;
+    width: 270px;
+    height: 30px;
+    border-color: rgb(255, 207, 86);
+    border-radius: 5px;
+}
+
+.back {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(72, 87, 105);
+    color: white;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+}
+
+.back:hover {
+    background-color: rgb(35, 47, 62);
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(35, 47, 62);
+    border-bottom: 1px solid white;
+    padding: 50px 0px;
+
+}
+
+.foot ul li {
+    margin-top: 8px;
+    list-style: none;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot ul li:nth-child(1) {
+    font-size: large;
+    font-weight: bold;
+}
+
+.foot ul li:not(:first-child):hover {
+    text-decoration: underline;
+}
+
+
+.footdown {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(19, 26, 34);
+
+}
+
+.footd ul {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    list-style: none;
+    margin-top: 40px;
+
+}
+
+.footd ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.footd ul li:nth-child(1) {
+    font-size: large;
+    font-weight: bold;
+}
+
+.footd ul li:hover {
+    text-decoration: underline;
+}
+
+.footd1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(19, 26, 34);
+}
+
+.footd1 div a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.footd1 div a:hover {
+    text-decoration: underline;
+}
+
+.footd1 div {
+    color: white;
+}
+
+.footmid {
+    height: 150px;
+    text-align: center;
+    background-color: rgb(19, 26, 34);
+
+}
+
+.footmid1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.footmid2 {
+    margin-top: 40px;
+}
+
+.footmid2 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footmid2 a:hover {
+    text-decoration: underline;
+}
+
