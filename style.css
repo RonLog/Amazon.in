@@ -37,8 +37,22 @@ header .two {
     align-items: center;
 }
 
+.two_sub:hover {
+    border: none;
+}
+
 header .three form {
     display: flex;
+}
+
+header .three {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.serach:hover {
+    border: 3px solid orange;
+    border-radius: 5px;
 }
 
 .head {
