@@ -6,6 +6,7 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(19, 25, 33);
     color: white;
@@ -37,6 +38,12 @@ header .two {
     align-items: center;
 }
 
+.fa-location-dot {
+    font-weight: 900;
+    font-size: 28px;
+    background-color: transparent;
+}
+
 .two_sub:hover {
     border: none;
 }
@@ -50,21 +57,23 @@ header .three {
     border-radius: 5px;
 }
 
-.serach:hover {
+.search:hover {
     border: 3px solid orange;
     border-radius: 5px;
 }
 
 .head {
-    position: fixed;
+    position: sticky;
     top: 50px;
     width: 100%;
     z-index: 1;
     background-color: rgb(35, 47, 62);
     color: white;
     height: 40px;
-    line-height: 40px;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .head ul li {
@@ -80,23 +89,27 @@ header .three {
     border-radius: 5px;
 }
 
-input[type=text] {
-
+.search input[type=text] {
+    border: none;
     outline: none;
-    border-radius: 5px;
+    width: 700px;
+    height: 35px;
 }
 
 input[type=image] {
-    border-radius: 5px;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 input[name=language] {
     accent-color: orange;
 }
 
-.app {
-    display: flex;
+.app img {
+    vertical-align: middle;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .side {
@@ -156,7 +169,8 @@ input[name=language] {
 select {
     width: 41px;
     border: none;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 select:hover {
@@ -498,4 +512,19 @@ footer {
 
 .footmid2 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        position: static;
+    }
+
+    .head {
+        position: static;
+        overflow-x: auto;
+    }
+
+    .search input[type=text] {
+        width: auto;
+    }
 }
